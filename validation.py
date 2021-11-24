@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # sum squared error
 # usado para fazer a plotagem dos dados
 SSEs = {}
-for k in range(1, 11):
+for k in range(1, 8):
     model = kmeans_model(k)
     SSEs[k] = model.inertia_
 
