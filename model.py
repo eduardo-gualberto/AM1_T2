@@ -9,5 +9,5 @@ def kmeans_model(k: int):
     #etapa de preparação dos dados
     df = data_prep(raw_df)
 
-    kmeans = KMeans(n_clusters=k).fit(df)
-    return kmeans
+    kmeans = KMeans(n_clusters=k)
+    return kmeans, df
